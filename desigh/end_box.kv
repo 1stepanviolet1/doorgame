@@ -1,0 +1,29 @@
+GridLayout:
+    rows: 3
+
+    btn_to_start: btn_to_start
+    btn_reload: btn_reload
+    img: img
+
+    AnchorLayout:
+        size_hint_y: .17
+        anchor_x: 'right'
+        padding: [0, 20, 20, 0]
+
+        Button:
+            id: btn_to_start
+            text: '<--'
+            font_size: '30sp'
+            size_hint_x: .2
+
+    Image:
+        id: img
+
+    FloatLayout:
+
+        Button:
+            id: btn_reload
+            font_size: '40sp'
+            text: 'Reload'
+            size_hint: .5, .3
+            pos_hint: {'center_x': .5, 'center_y': .5}

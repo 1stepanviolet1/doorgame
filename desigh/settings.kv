@@ -1,0 +1,45 @@
+FloatLayout:
+    btn_sys: sys
+    clear_pool: clear_pool
+    
+    Label:
+    	text: 'Settings'
+    	font_size: '48sp'
+    	size_hint_y: .15
+    	pos_hint: {'center_x': .5, 'top': 1}
+
+    AnchorLayout:
+        anchor_x: 'left'
+        anchor_y: 'top'
+        padding: 30
+
+        Button:
+            id: sys
+            text: '---------\n---------\n---------'
+            font_size: '8sp'
+            size_hint: .1, .05
+
+    BoxLayout:
+        orientation: 'vertical'
+        size_hint: .4, .65
+        pos_hint: {'center_x': .5, 'center_y': .5}
+        spacing: 25
+
+        Button:
+            id: clear_pool
+            text: 'Clear Pool'
+            font_size: '23sp'
+            size_hint: .85, .92
+            pos_hint: {'center_x': .5, 'center_y': .5}
+
+        Label:
+
+        Label:
+
+        Label:
+
+        Label:
+
+        Label:
+
+        Label:

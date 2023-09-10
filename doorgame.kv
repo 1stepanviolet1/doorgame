@@ -1,0 +1,49 @@
+<Container>:
+    start_box: start_box
+
+    FloatLayout:
+        id: start_box
+
+        res: res
+        btn_play: btn_play
+        pool_box: pool
+        btn_sys: sys
+
+        AnchorLayout:
+            anchor_x: 'left'
+            anchor_y: 'top'
+            padding: 30
+
+            Button:
+                id: sys
+                text: '---------\n---------\n---------'
+                font_size: '8sp'
+                size_hint: .1, .05
+
+        AnchorLayout:
+            anchor_y: 'top'
+            padding: [0, 55, 0, 0]
+
+            Label:
+                text: 'DoorGame'
+                font_size: '55sp'
+                size_hint: .75, .35
+
+        Label:
+            id: res
+            text: 'Wins: 0\nLosses: 0'
+            font_size: '30sp'
+            pos_hint: {'center_x': .5, 'center_y': .5}
+
+        AnchorLayout:
+            id: pool
+            anchor_x: 'left'
+
+            # TODO: Здесь будет pool
+
+        Button:
+            id: btn_play
+            text: 'Play'
+            font_size: '45sp'
+            size_hint: .50, .14
+            pos_hint: {'center_x': .5, 'y': .15}
